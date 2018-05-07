@@ -1,0 +1,11 @@
+<h3>ComponentToView</h3>
+<!-- hien thi kien interpolation -->
+<!-- <h3>Họ Tên: {{ name }}</h3>
+<h4>Tuổi: {{ age }}</h4>
+<h4>Tình trạng hôn nhân: {{ isMarried ? 'đã kết hôn' : 'độc thân' }}</h4> -->
+<h3>Họ Tên: {{ user.name }}</h3>
+<h4>Tuổi: {{ user.age > 18 ? 'Đã dậy thì' : 'Còn non cơm' }}</h4>
+<h4>Tình trạng hôn nhân: {{ user.isMarried ? 'đã kết hôn' : 'độc thân' }}</h4>
+<a href="{{ link }}">{{ textLink }}</a>
+
+<p>{{ showInfo() }}</p>
