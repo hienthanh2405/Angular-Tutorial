@@ -17,6 +17,13 @@ export class ComponentToViewComponent implements OnInit {
     age : 21,
     isMarried : true
   }
+  public isValid : boolean = false; 
+  public tbWidth : number = 500;
+  public isBorder : boolean = true;
+  public isChecked : number = 0; //1: add class, 0 remove class
+  public isSpecial : boolean = true;
+  public size : number = 24;
+
 
   constructor() { }
 
