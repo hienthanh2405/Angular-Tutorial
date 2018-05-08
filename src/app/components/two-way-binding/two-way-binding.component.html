@@ -1,0 +1,22 @@
+<h1>{{ title }}</h1>
+<h2>Họ tên: {{ name }}</h2>
+<h2>Giới tính {{ gender == 1 ? 'Nam' : 'Nữ' }}</h2>
+
+<form action="">
+  <div class="form-group">
+    <label for="">Nhập tên:</label>
+    <input type="text" class="form-control" 
+    [(ngModel)]="name"
+    [ngModelOptions]="{standalone: true}"
+    >
+  </div>
+
+  <label for="">Chọn giới tính: </label>
+  <select name="" class="form-control" required="required" 
+  [(ngModel)]="gender"
+  [ngModelOptions]="{standalone: true}"
+  >
+    <option value="1">Nam</option>
+    <option value="0">Nữ</option>
+  </select>
+</form>
