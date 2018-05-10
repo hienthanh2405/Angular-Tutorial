@@ -1,4 +1,4 @@
-<h1 *ngIf="isShow">Họ tên: {{ userName }}</h1>
+<!-- <h1 *ngIf="isShow">Họ tên: {{ userName }}</h1>
 
 <button type="button" class="btn btn-default" (click)="onToggle()">Toggle</button>
 
@@ -26,7 +26,46 @@
 </ng-container>
 <ng-template #elseNotEnough>
     <h3>Không đủ tuổi</h3>
-</ng-template>
+</ng-template> -->
 
 <!-- Kiểm tra mảng. Nếu mảng.length > 0 => Hiển thị mảng -->
 <!-- Ngược lại -->
+
+
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let item of names">
+        {{ item }}
+    </li>
+</ul>
+
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>Tên</th>
+            <th>Giá</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of products;
+             let i  = index
+             let f = first
+             let l = last
+             let e = even
+             let o = odd
+             trackBy : myTrackByFunction
+             "
+            [style.background-color] = "f===true ? 'gray' : ''"
+            [style.background-color] = "l===true ? 'cyan' : ''"
+        >
+            <td>{{ i+1 }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.price }} VND</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<button type="button" class="btn btn-default" (click)="onLoadData()">Get Data From Server</button>
+
