@@ -1,0 +1,52 @@
+<!-- <h3 
+  [class.pd-10]="true"
+  [class.cl-red]="true"
+  [class.border-blue]="true"
+>
+  Chào mừng bạn đến với chương trình angular 4
+</h3> -->
+<!-- 
+<h3 
+  [ngClass]="['pd-10','cl-red','border-blue']" 
+>
+  Chào mừng bạn đến với chương trình angular 4
+</h3> -->
+
+<!-- <p> Special: {{ isSpecial }}</p> -->
+<!-- thuoc tinh la 1 object -->
+<!-- <h3 
+  [ngClass]="{ 'border-blue' : isSpecial,
+                'pd-10' : isSpecial,
+                'cl-red' : isSpecial,
+                'border-yellow' : !isSpecial
+   }"
+>
+  Chào mừng bạn đến với chương trình angular 4
+</h3>
+ 
+ <button type="button" class="btn btn-danger" (click)="onToggleSpecial()">
+   Toggle Button</button>
+  -->
+  <p> Special: {{ isSpecial }}</p>
+<!-- thuoc tinh la 1 object -->
+<h3 
+  [ngClass]="setClasses()"
+>
+  Chào mừng bạn đến với chương trình angular 4
+</h3>
+ 
+ <button type="button" class="btn btn-danger" (click)="onToggleSpecial()">
+   Toggle Button</button>
+ 
+
+   <p> Special: {{ isSpecial }}</p>
+<!-- thuoc tinh la 1 object -->
+<h3 
+  [ngStyle]="setStyle()"
+>
+  Chào mừng bạn đến với chương trình angular 4
+</h3>
+ 
+ <button type="button" class="btn btn-danger" (click)="onToggleSpecial()">
+   Toggle Button</button>
+ 

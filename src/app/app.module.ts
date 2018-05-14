@@ -8,6 +8,7 @@ import { ComponentToViewComponent } from './components/component-to-view/compone
 import { ViewToComponentComponent } from './components/view-to-component/view-to-component.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 import { StructuralComponent } from './components/structural/structural.component';
+import { AttributeComponent } from './components/attribute/attribute.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { StructuralComponent } from './components/structural/structural.componen
     ViewToComponentComponent,
     TwoWayBindingComponent,
     StructuralComponent,
+    AttributeComponent,
   ],
   imports: [
     BrowserModule,
